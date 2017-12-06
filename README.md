@@ -4,6 +4,7 @@ This repository contains all source code for our visual awareness experiments.
 
 ## Organization of this repository
 This section of this README file describes how files are arranged in this folder.
+
 File or directory name | Purpose
 -|-
 README.md|This file
