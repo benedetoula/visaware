@@ -34,23 +34,9 @@ experimental (raspicam) version: [https://github.com/jacksonliam/mjpg-streamer/]
     sudo make install
 which will place installed files under `/usr/local/`
 
-8) In `bin/` we currently have the script that is responsible for running the
+      8) In `bin/` we currently have the script that is responsible for running the
 `mjpg-streamer` executable you've built in the previous step. This script is
-where we set the command-line arguments we run `mjpeg-streamer` with. Currently It has the following code:
-
-    pi@pisee:~ $ cat bin/run_mjpg_streamer.sh 
-    \#!/bin/bash
-
-    \# this is the script that runs mjpeg_streamer as user pi every time
-    \# this device boots. it is called from /etc/rc.local during the boot
-    \# process.
-
-    \#   this script contains all the command-line arguments that we want to supply
-    # mjpeg_streamer for our operations.  to change the command-line arguments of
-    # mjpeg_streamer server, change them here and only here.
-
-    # NOTE: mjpeg_streamer has been installed in user 'pi' home directory.
-    # The final install step 'sudo make install' put files under /usr/local/
+where we set the command-line arguments we run `mjpeg-streamer` with. Currently it runs the following code:
 
     mjpg_streamer -i "input_raspicam.so -x 640 -y 480 -fps 30 -br 90 -co 100 -ifx watercolour" -o "output_http.so -w ./www"
 9) Set up the machine for automatically starting mjpeg-streamer upon boot (headless or not).  For this just add the following line to `/etc/rc.local`:
