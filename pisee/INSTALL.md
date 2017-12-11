@@ -35,7 +35,7 @@ experimental (raspicam) version: [https://github.com/jacksonliam/mjpg-streamer/]
     ```
     sudo make install
     ```
-which will place installed files under `/usr/local/`
+   which will place installed files under `/usr/local/`
 
 8) In `bin/` we currently have the script that is responsible for running the
 `mjpg-streamer` executable you've built in the previous step. This script is
