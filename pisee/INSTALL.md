@@ -6,9 +6,10 @@ generic way possible. Download the image and follow instructions [here]
 2) On a mac, I used `etcher` to write the OS image to the micro-sd card
 3) Upgrade and update packages. Insert micro-sd card into board and boot it,
 start a shell and type 
-
+```
     sudo apt update
     sudo apt upgrade
+```
 4) Change the keyboard to a US keyboard (because by default the board comes
 with a UK keyboard). Type
 
