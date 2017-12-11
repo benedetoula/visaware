@@ -9,7 +9,7 @@ start a shell and type
     ```
     sudo apt update
     sudo apt upgrade
-        ```
+    ```
 4) Change the keyboard to a US keyboard (because by default the board comes
 with a UK keyboard). Type
     ```
