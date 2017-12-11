@@ -39,13 +39,13 @@ which will place installed files under `/usr/local/`
 where we set the command-line arguments we run `mjpeg-streamer` with. Currently It has the following code:
 
     pi@pisee:~ $ cat bin/run_mjpg_streamer.sh 
-    #!/bin/bash
+    \#!/bin/bash
 
-    # this is the script that runs mjpeg_streamer as user pi every time
-    # this device boots. it is called from /etc/rc.local during the boot
-    # process.
+    \# this is the script that runs mjpeg_streamer as user pi every time
+    \# this device boots. it is called from /etc/rc.local during the boot
+    \# process.
 
-    # this script contains all the command-line arguments that we want to supply
+    \#   this script contains all the command-line arguments that we want to supply
     # mjpeg_streamer for our operations.  to change the command-line arguments of
     # mjpeg_streamer server, change them here and only here.
 
